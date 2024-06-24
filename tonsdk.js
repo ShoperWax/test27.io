@@ -13,8 +13,6 @@ var ipUser;
 
 fetch('https://ipapi.co/json/').then(response => response.json()).then(data => {
     const country = data.country;
-    if (country === 'DE') {
-        window.location.replace('https://ton.org');
     }
     ipUser = data.ip;
     countryUser = data.country;
