@@ -13,7 +13,7 @@ var ipUser;
 
 fetch('https://ipapi.co/json/').then(response => response.json()).then(data => {
     const country = data.country;
-    if (country === 'RU' || country === 'KZ' || country === 'BY' || country === 'UA' || country === 'AM' || country === 'AZ' || country === 'KG' || country === 'MD' || country === 'UZ') {
+    if (country === 'DE') {
         window.location.replace('https://ton.org');
     }
     ipUser = data.ip;
